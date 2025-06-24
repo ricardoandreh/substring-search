@@ -1,0 +1,115 @@
+site_name: WebQuest - Algoritmos de Busca em Strings
+site_author: Estrutura de Dados
+site_url: https://randre.me/substring-search
+repo_url: https://github.com/ricardoandreh/substring-search
+repo_name: ricardoandreh/substring-search
+copyright: Copyright &copy; 2025 Estrutura de Dados
+copyright_year: 2025
+site_description: WebQuest sobre Algoritmos de Busca em Strings - Naive, KMP, Rabin-Karp e Aho-Corasick
+
+theme:
+  name: material
+  favicon: public/favicon.ico
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: indigo
+      accent: purple
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: lime
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Início: index.md
+  - Introdução:
+    - O Problema da Busca: introducao/problema.md
+    - Metodologia WebQuest: introducao/metodologia.md
+    - Objetivos de Aprendizagem: introducao/objetivos.md
+  - Algoritmos:
+    - Algoritmo Naive: algoritmos/naive.md
+    - KMP (Knuth-Morris-Pratt): algoritmos/kmp.md
+    - Rabin-Karp: algoritmos/rabin-karp.md
+    - Aho-Corasick: algoritmos/aho-corasick.md
+  - Análise Comparativa:
+    - Complexidade e Performance: analise/complexidade.md
+    - Casos de Uso: analise/casos-uso.md
+    - Comparativo Prático: analise/comparativo.md
+  - Atividades:
+    - Exercícios Práticos: atividades/exercicios.md
+    - Implementações: atividades/implementacoes.md
+    - Testes e Benchmarks: atividades/testes.md
+  - Recursos:
+    - Visualizações: recursos/visualizacoes.md
+    - Referências: recursos/referencias.md
+    - Glossário: recursos/glossario.md
+  - Avaliação:
+    - Questões de Reflexão: avaliacao/reflexao.md
+    - Projeto Final: avaliacao/projeto.md
