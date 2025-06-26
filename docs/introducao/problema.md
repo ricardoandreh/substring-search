@@ -14,7 +14,7 @@ Posições: [0, 15]
 
 ## Por que é um Problema Importante?
 
-### 1. Ubiquidade
+### 1. Abrangente
 A busca em strings aparece em praticamente todos os sistemas computacionais:
 
 !!! example "Aplicações Cotidianas"
@@ -35,7 +35,7 @@ A busca em strings aparece em praticamente todos os sistemas computacionais:
 - **Throughput**: Processar milhões de consultas/segundo
 - **Memória limitada**: Algoritmos devem ser eficientes em espaço
 
-### 3. Complexidade Algorítmica
+### 3. Complexidade de Algoritmo
 
 #### Abordagem Ingênua
 ```python
@@ -126,8 +126,8 @@ palavras_positivas = ["fantástico", "ótimo", "excelente", ...]
 |---------|----------------------|---------|
 | **Padrão único, texto pequeno** | Naive | Simplicidade |
 | **Padrão único, texto grande** | KMP | Eficiência linear |
-| **Múltiplos padrões** | Aho-Corasick | Busca simultânea |
 | **Hashing disponível** | Rabin-Karp | Flexibilidade |
+| **Múltiplos padrões** | Aho-Corasick | Busca simultânea |
 
 ## Questões para Reflexão
 

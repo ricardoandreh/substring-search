@@ -3,7 +3,7 @@
 !!! info "Bem-vindo(a) ao WebQuest sobre Busca em Strings!"
     Neste WebQuest, você irá explorar, implementar e analisar algoritmos clássicos de busca em strings usando Python. Prepare-se para uma jornada através dos algoritmos Naive, KMP, Rabin-Karp e Aho-Corasick!
 
-## 🎯 O que você vai aprender
+## O que você vai aprender
 
 - **Compreender** os fundamentos da busca em strings
 - **Implementar** algoritmos clássicos em Python
@@ -11,7 +11,7 @@
 - **Comparar** diferentes abordagens
 - **Aplicar** os conhecimentos em problemas reais
 
-## 🚀 Metodologia WebQuest
+## Metodologia WebQuest
 
 Esta experiência de aprendizagem segue a metodologia WebQuest, que combina:
 
@@ -20,7 +20,7 @@ Esta experiência de aprendizagem segue a metodologia WebQuest, que combina:
 - **Análise crítica** de algoritmos e suas aplicações
 - **Síntese do conhecimento** através de comparações
 
-## 📚 Algoritmos Estudados
+## Algoritmos Estudados
 
 === "Algoritmo Naive"
     O método mais simples e intuitivo para busca em strings.
@@ -50,7 +50,7 @@ Esta experiência de aprendizagem segue a metodologia WebQuest, que combina:
     - **Vantagem**: Múltiplos padrões em uma única passada
     - **Aplicação**: Filtros de conteúdo, bioinformática
 
-## 🛣️ Roteiro de Estudos
+## Roteiro de Estudos
 
 ```mermaid
 graph TD
@@ -64,7 +64,7 @@ graph TD
     H --> I[Avaliação Final]
 ```
 
-## 🎓 Como usar este WebQuest
+## Como usar este WebQuest
 
 1. **Navegue sequencialmente** pelos algoritmos
 2. **Execute os códigos** fornecidos
@@ -75,7 +75,7 @@ graph TD
 !!! tip "Dica de Estudo"
     Mantenha um caderno de anotações para registrar suas descobertas e dúvidas. A programação se aprende praticando!
 
-## 📊 Recursos Interativos
+## Recursos Interativos
 
 - **Visualizações** dos algoritmos em ação
 - **Códigos comentados** linha por linha

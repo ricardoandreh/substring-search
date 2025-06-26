@@ -92,52 +92,6 @@ def naive_search_detalhado(text, pattern):
     return positions            # (12) Retorna todas as posições
 ```
 
-### Versão com Debugging
-
-```python linenums="1"
-def naive_search_debug(text, pattern, verbose=False):
-    """Versão com debug para visualizar o processo"""
-    n, m = len(text), len(pattern)
-    positions = []
-    comparisons = 0  # Contador de comparações (para análise)
-    
-    if verbose:
-        print(f"Texto: '{text}' (tamanho: {n})")
-        print(f"Padrão: '{pattern}' (tamanho: {m})")
-        print("-" * 50)
-    
-    for i in range(n - m + 1):
-        if verbose:
-            print(f"\nTentativa na posição {i}:")
-            print(f"Comparando '{text[i:i+m]}' com '{pattern}'")
-        
-        match = True
-        for j in range(m):
-            comparisons += 1
-            if verbose:
-                print(f"  {text[i+j]} vs {pattern[j]} - ", end="")
-            
-            if text[i + j] != pattern[j]:
-                match = False
-                if verbose:
-                    print("❌ Diferente")
-                break
-            else:
-                if verbose:
-                    print("✅ Igual")
-        
-        if match:
-            positions.append(i)
-            if verbose:
-                print(f"🎯 MATCH encontrado na posição {i}!")
-    
-    if verbose:
-        print(f"\nTotal de comparações: {comparisons}")
-        print(f"Posições encontradas: {positions}")
-    
-    return positions, comparisons
-```
-
 ## 📊 Análise de Complexidade
 
 ### Complexidade Temporal
@@ -194,7 +148,7 @@ def filtro_palavras_proibidas(texto, palavras_proibidas):
     
     for palavra in palavras_proibidas:
         # Busca naive para cada palavra proibida
-        positions, _ = naive_search_debug(texto_limpo.lower(), 
+        positions, _ = naive_search(texto_limpo.lower(), 
                                         palavra.lower())
         
         # Substitui por asteriscos
@@ -257,7 +211,7 @@ for r in resultados:
           f"Comparações: {r['comparacoes']:6d}")
 ```
 
-## 🔍 Variações do Algoritmo Naive
+## Variações do Algoritmo Naive
 
 ### 1. Busca Case-Insensitive
 
@@ -316,7 +270,7 @@ for padrao, posicoes in resultados.items():
     print(f"'{padrao}': {posicoes}")
 ```
 
-## 📝 Exercícios Práticos
+## Exercícios Práticos
 
 !!! question "Exercício 1: Implementação Básica"
     Implemente uma versão do algoritmo naive que retorne apenas a primeira ocorrência do padrão.
