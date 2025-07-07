@@ -1,5 +1,7 @@
 # Algoritmo de Busca de Rabin-Karp
 
+## Introdução
+
 O **Algoritmo de Rabin-Karp** é uma técnica eficiente para encontrar substrings dentro de uma string. Ele utiliza hashing para comparar rapidamente os hashes das subsequências do texto com o hash do padrão, em vez de comparar cada caractere individualmente.
 
 ## Funcionamento
