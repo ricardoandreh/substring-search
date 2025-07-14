@@ -86,17 +86,21 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Início: index.md
-  - Introdução:
-    - O Problema da Busca: introducao/problema.md
-    - Objetivos de Aprendizagem: introducao/objetivos.md
-  - Algoritmos:
-    - Algoritmo Naive: algoritmos/naive.md
-    - KMP (Knuth-Morris-Pratt): algoritmos/kmp.md
-    - Rabin-Karp: algoritmos/rabin-karp.md
-    - Aho-Corasick: algoritmos/aho-corasick.md
-  - Atividades:
-    - Implementações: atividades/implementacoes.md
-  - Recursos:
-    - Visualizações: recursos/visualizacoes.md
-    - Referências: recursos/referencias.md
+  - 'Início': index.md
+  - 'Introdução':
+      - 'O Problema': introducao/problema.md
+      - 'Objetivos': introducao/objetivos.md
+  - 'Tarefa': tarefa/index.md
+  - 'Processo': processo/index.md
+  - 'Recursos':
+      - 'Algoritmos':
+          - 'Força Bruta (Naive)': algoritmos/naive.md
+          - 'Knuth-Morris-Pratt (KMP)': algoritmos/kmp.md
+          - 'Rabin-Karp': algoritmos/rabin-karp.md
+          - 'Aho-Corasick': algoritmos/aho-corasick.md
+      - 'Visualizações': recursos/visualizacoes.md
+      - 'Referências': recursos/referencias.md
+  - 'Avaliação': avaliacao/index.md
+  - 'Conclusão': conclusao/index.md
+  - 'Atividades':
+      - 'Desafios Online': atividades/desafios_online.md

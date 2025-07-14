@@ -1,2 +1,0 @@
-# Rabin-Karp
-
