@@ -14,7 +14,7 @@ Primeiro definimos uma função de dispersão, algoritmo que transforma os dados
 
 ## Rolling hash
 
-O **Rolling hash** rata-se de uma técnica que permite calcular o hash de todas as substrings de tamanho fixo de forma eficiente. Invés de calcularmos o valor do hash novamente,o **Rolling hash** atualiza o valor da hash da substring anterior, subtraindo o valor do primeiro caracter e somando o valor do primeiro caracter, acessando o novo valor de uma nova substring. No contexto **Rabin-Karp**, significa remover o caracter mais à esquerda e adicionar o valor do caracter que entra na nova substring.
+O **Rolling hash** rata-se de uma técnica que permite calcular o hash de todas as substrings de tamanho fixo de forma eficiente. Invés de calcularmos o valor do hash novamente,o **Rolling hash** atualiza o valor da hash da substring anterior, subtraindo o valor do primeiro caracter e somando o valor do próximo caracter, acessando o novo valor de uma nova substring. No contexto **Rabin-Karp**, significa remover o caracter mais à esquerda e adicionar o valor do caracter que entra na nova substring.
 
 ## Funcionamento
 
